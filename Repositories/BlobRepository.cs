@@ -7,11 +7,11 @@ namespace StorageWebApp.Repositories
 {
     public class BlobRepository : IBlobRepository
     {
-        private static string connectionString = "DefaultEndpointsProtocol=https;AccountName=webstorage8;AccountKey=iPhP3TWz7mRob8JBMNz+OEk7k2x8DGM5YQ+7prPqrpC68Y0hKGhn3CBIG9GvapwEhCsAlzOpOA8h+AStmJ4e1Q==;EndpointSuffix=core.windows.net";
+        private static string connectionString = "DefaultEndpointsProtocol=https;AccountName=jdstorage8;AccountKey=OJcTsN4oVxfpK6dyCycGkGfbiyY7VRteEleW9cQJDGis9bVK7dhUQgkkE2baz475S7JwRpR/RO8T+AStOmwUgg==;EndpointSuffix=core.windows.net";
         private readonly CloudBlobContainer _container;
         public BlobRepository(string connectionString, string containername)
         {
-            var blobClient = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=webstorage8;AccountKey=iPhP3TWz7mRob8JBMNz+OEk7k2x8DGM5YQ+7prPqrpC68Y0hKGhn3CBIG9GvapwEhCsAlzOpOA8h+AStmJ4e1Q==;EndpointSuffix=core.windows.net").CreateCloudBlobClient();
+            var blobClient = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=jdstorage8;AccountKey=OJcTsN4oVxfpK6dyCycGkGfbiyY7VRteEleW9cQJDGis9bVK7dhUQgkkE2baz475S7JwRpR/RO8T+AStOmwUgg==;EndpointSuffix=core.windows.net").CreateCloudBlobClient();
             _container = blobClient.GetContainerReference("jdcon");
         }
         public async Task<BlobStorage> GetFileAsync(string fileName)

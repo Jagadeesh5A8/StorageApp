@@ -5,7 +5,7 @@ namespace StorageWebApp.Repositories
 {
     public class FileShareRepository : IFileShareRepository
     {
-        private static string connectionString = "DefaultEndpointsProtocol=https;AccountName=jdstora8;AccountKey=zqGe8/qeOtr7CryMq4/sGJklZtZHZ0rPt4ez25ZVHLuBT4Jc72KnpCqjdu64RtxpRzFF3Yi89kEm+AStz0dokQ==;EndpointSuffix=core.windows.net
+        private static string connectionString = "DefaultEndpointsProtocol=https;AccountName=jdstora8;AccountKey=zqGe8/qeOtr7CryMq4/sGJklZtZHZ0rPt4ez25ZVHLuBT4Jc72KnpCqjdu64RtxpRzFF3Yi89kEm+AStz0dokQ==;EndpointSuffix=core.windows.net";
         private static string fileShareName = "file1";
         //private static string ShareClient shareClient;
 

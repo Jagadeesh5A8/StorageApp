@@ -5,7 +5,7 @@ namespace StorageWebApp.Repositories
 {
     public class TableStorageRepository : ITableStorageRepository
     {
-        private const string TableName = "jdtable1";
+        private const string TableName = "table1";
         private readonly IConfiguration _configuration;
         public TableStorageRepository(IConfiguration configuration)
         {
